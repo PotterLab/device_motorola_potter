@@ -84,7 +84,10 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "potter-user 8.1.0 OPSS28.85-17-4 28698 release-keys");
-    property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys");
+    property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.bootimage.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 
     // sku
     std::string sku = "Moto G5 Plus (";
