@@ -91,6 +91,7 @@ void vendor_load_properties()
     sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
     sku.append(")");
     property_override("ro.product.model", sku.c_str());
+    property_override("ro.product.system.model", "Moto G5 Plus");
 
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
