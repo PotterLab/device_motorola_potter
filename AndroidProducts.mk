@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_potter.mk
+    $(LOCAL_DIR)/statix_potter.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_potter-user \
-    aosp_potter-userdebug \
-    aosp_potter-eng
+    statix_potter-user \
+    statix_potter-userdebug \
+    statix_potter-eng
